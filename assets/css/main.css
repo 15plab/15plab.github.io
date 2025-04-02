@@ -1691,3 +1691,11 @@ input, select, textarea {
   display: none;
 }
 
+#header > *:before {
+  display: none !important;
+  content: none !important;
+  height: 0 !important;
+}
+
+
+
