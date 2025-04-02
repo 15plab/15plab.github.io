@@ -1670,3 +1670,20 @@ input, select, textarea {
 #header:before {
   display: none;
 }
+/* 로고 이미지 크기 및 정렬 */
+.logo-image {
+  width: 100px;
+  height: auto;
+  display: block;
+  margin: 0 auto 1.5rem auto; /* 가운데 정렬 + 아래 여백 */
+}
+
+/* 동그라미 선 제거 */
+#header:before {
+  display: none !important;
+}
+
+/* 로고 아래 텍스트 제거 (Logo라는 글씨) */
+#header .logo + .content h1 {
+  display: none;
+}
