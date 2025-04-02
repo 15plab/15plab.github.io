@@ -1687,3 +1687,26 @@ input, select, textarea {
 #header .logo + .content h1 {
   display: none;
 }
+
+/* 로고 이미지 위치 및 크기 */
+.logo-image {
+  display: block;
+  margin: 0 auto 1.5rem auto;
+  max-width: 180px;
+  height: auto;
+}
+
+/* 헤더 위의 원형 선 제거 */
+#header:before {
+  display: none !important;
+}
+
+/* 헤더 중앙 세로 라인 제거 */
+#header:after {
+  display: none !important;
+}
+
+/* 헤더 내 텍스트 로고(15PLAB 텍스트) 숨기기 */
+#header .content h1 {
+  display: none;
+	
