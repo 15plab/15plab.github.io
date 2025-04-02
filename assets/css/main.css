@@ -1659,41 +1659,21 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
-/* 로고 이미지 스타일 */
-.logo-image {
-  width: 120px;
-  height: auto;
-  margin-bottom: 1rem;
-}
 
-/* 동그라미 라인 제거 */
-#header:before {
-  display: none;
-}
-/* 로고 이미지 크기 및 정렬 */
-.logo-image {
-  width: 500px;
-  height: auto;
-  display: block;
-  margin: 0 auto 1.5rem auto; /* 가운데 정렬 + 아래 여백 */
-}
-
-/* 동그라미 선 제거 */
-#header:before {
-  display: none !important;
-}
-
-/* 로고 아래 텍스트 제거 (Logo라는 글씨) */
-#header .logo + .content h1 {
-  display: none;
-}
-
-/* 로고 이미지 위치 및 크기 */
+	/* 15PLAB 로고 스타일 */
 .logo-image {
   display: block;
-  margin: 0 auto 1.5rem auto;
+  margin: 0 auto 1.5rem auto; /* 중앙 정렬 + 아래 여백 */
   max-width: 180px;
   height: auto;
+}
+
+/* 원형 테두리 제거 */
+#header .logo {
+  border: none;
+  width: auto;
+  height: auto;
+  line-height: normal;
 }
 
 /* 헤더 위의 원형 선 제거 */
@@ -1701,12 +1681,13 @@ input, select, textarea {
   display: none !important;
 }
 
-/* 헤더 중앙 세로 라인 제거 */
+/* 헤더 중앙의 세로 선 제거 */
 #header:after {
   display: none !important;
 }
 
-/* 헤더 내 텍스트 로고(15PLAB 텍스트) 숨기기 */
+/* 헤더 안 텍스트 로고 숨기기 */
 #header .content h1 {
   display: none;
-	
+}
+
