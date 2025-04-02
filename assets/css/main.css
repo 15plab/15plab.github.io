@@ -1672,7 +1672,7 @@ input, select, textarea {
 }
 /* 로고 이미지 크기 및 정렬 */
 .logo-image {
-  width: 100px;
+  width: 500px;
   height: auto;
   display: block;
   margin: 0 auto 1.5rem auto; /* 가운데 정렬 + 아래 여백 */
