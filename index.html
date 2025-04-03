@@ -99,6 +99,10 @@
       <li><input type="reset" value="Reset" /></li>
     </ul>
   </form>
+	<p id="form-status" style="display:none; color:#00ff99; font-weight: bold; margin-top: 1rem;">
+  ✅ 메시지가 성공적으로 전송되었습니다!
+</p>
+	
 </article>
 
 
@@ -364,4 +368,33 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/main.js"></script>
 
 	</body>
+	<script>
+  const form = document.querySelector("form");
+  const status = document.getElementById("form-status");
+
+  form.addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    const formData = new FormData(form);
+
+    const response = await fetch(form.action, {
+      method: form.method,
+      body: formData,
+      headers: {
+        'Accept': 'application/json'
+      }
+    });
+
+    if (response.ok) {
+      form.reset();
+      status.style.display = "block";
+      setTimeout(() => {
+        status.style.display = "none";
+      }, 5000); // 5초 후 메시지 사라짐
+    } else {
+      alert("❌ 메시지 전송에 실패했습니다. 다시 시도해 주세요.");
+    }
+  });
+</script>
+
 </html>
