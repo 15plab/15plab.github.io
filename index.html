@@ -9,12 +9,22 @@
 		<title>15PLAB</title>
 		<meta charset="utf-8" />
 		<meta name="description" content="15PLAB is a product design lab offering one-stop solutions from concept to production.">
-        <meta name="keywords" content="product design, industrial design, 15PLAB, 디자인 회사, 제품 개발, 브랜드 디자인">
+        <meta name="keywords" content="product design, industrial design, 15PLAB, 제품 개발, 드래버 디자인">
         <meta name="author" content="15PLAB">
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<link rel="icon" href="favicon.png" type="image/x-icon" />
+
+		<!-- ✅ About 서식 이미지 크기 조정 -->
+		<style>
+		  #about .image.main img {
+			max-width: 60%;
+			height: auto;
+			display: block;
+			margin: 0 auto;
+		  }
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -112,7 +122,7 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
-		<!-- ✅ 성공 메시지 처리 스크립트 -->
+		<!-- ✅ 성공 메시지 프리브러 스크립트 -->
 		<script>
 		  const form = document.querySelector("form");
 		  const status = document.getElementById("form-status");
