@@ -1,177 +1,213 @@
 <!DOCTYPE HTML>
+<!--
+	Dimension by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
-<head>
-	<title>15PLAB</title>
-	<meta charset="utf-8" />
-	<meta name="description" content="15PLAB is a product design lab offering one-stop solutions from concept to production.">
-    <meta name="keywords" content="product design, industrial design, 15PLAB, 디자인 회사, 제품 개발, 브랜드 디자인">
-    <meta name="author" content="15PLAB">
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="assets/css/main.css" />
-	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	<link rel="icon" href="favicon.png" type="image/x-icon" />
-	<style>
-		.slider {
-			display: flex;
-			overflow: hidden;
-			position: relative;
-			width: 100%;
-			max-width: 600px;
-			margin: auto;
-		}
-		.slide {
-			flex-shrink: 0;
-			width: 100%;
-			display: none;
-		}
-		.slide.active {
+	<head>
+		<title>15PLAB</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="15PLAB is a product design lab offering one-stop solutions from concept to production.">
+        <meta name="keywords" content="product design, industrial design, 15PLAB, 제품 개발, 드래버 디자인">
+        <meta name="author" content="15PLAB">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="icon" href="favicon.png" type="image/x-icon" />
+
+		<!-- ✅ About 섹션 이미지 크기 조정 -->
+		<style>
+		  #about .image.main img {
+			max-width: 60%;
+			height: auto;
 			display: block;
-		}
-		.slider-buttons {
+			margin: 0 auto;
+		  }
+		  .slider {
+			position: relative;
+			max-width: 100%;
+			margin: 1rem auto 2rem auto;
 			text-align: center;
-			margin-top: 1rem;
-		}
-		.slider-buttons button {
+		  }
+		  .slider img {
+			max-width: 100%;
+			height: auto;
+			display: none;
+			border-radius: 5px;
+		  }
+		  .slider img.active {
+			display: block;
+		  }
+		  .slide-nav {
+			margin-top: 0.5rem;
+		  }
+		  .slide-nav button {
+			background: rgba(255,255,255,0.1);
+			border: 1px solid #fff;
+			color: #fff;
+			padding: 0.4rem 1rem;
 			margin: 0 0.5rem;
-		}
-	</style>
-</head>
-<body class="is-preload">
+			cursor: pointer;
+			border-radius: 4px;
+		  }
+		  .slide-nav button:hover {
+			background: rgba(255,255,255,0.3);
+		  }
+		</style>
+	</head>
+	<body class="is-preload">
 
-	<div id="wrapper">
-		<header id="header">
-			<div class="logo">
-				<img src="logo.png" alt="15PLAB Logo" class="logo-image" />
-			</div>
-			<div class="content">
-				<div class="inner">
-					<h1>15PLAB</h1>
-					<p>We design innovative products with function, beauty, and purpose — from concept to mass production.</p>
-				</div>
-			</div>
-			<nav>
-				<ul>
-					<li><a href="#about">About</a></li>
-					<li><a href="#work">Work</a></li>
-					<li><a href="#contact">Contact</a></li>
-				</ul>
-			</nav>
-		</header>
+		<!-- Wrapper -->
+			<div id="wrapper">
 
-		<div id="main">
-
-			<article id="about">
-				<h2 class="major">About</h2>
-				<span class="image main" style="max-width: 600px; margin: auto; display: block;">
-					<img src="images/KEEP CALMW.png" alt="KEEP CALMW.png" style="width: 100%; height: auto;" />
-				</span>
-				<p>
-					At <strong>15PLAB</strong>, we ignite ideas like <strong>phosphorus — element 15</strong>.<br><br>
-					Just as phosphorus lights the way in chemistry, we spark innovation in design.<br>
-					We specialize in creating meaningful products that combine <strong>function, beauty, and purpose</strong>,
-					guiding every idea from its <strong>first spark to mass production</strong>.<br><br>
-					Whether it's a bold concept or a subtle refinement, our team is dedicated to turning potential into tangible products.
-					With insight and passion, we bring your ideas to light.
-				</p>
-			</article>
-
-			<article id="work">
-				<h2 class="major">Work</h2>
-				<div class="slider">
-					<img src="images/work1.jpg" class="slide active" alt="Work 1">
-					<img src="images/work2.jpg" class="slide" alt="Work 2">
-					<img src="images/work3.jpg" class="slide" alt="Work 3">
-				</div>
-				<div class="slider-buttons">
-					<button onclick="prevSlide()">&#8592;</button>
-					<button onclick="nextSlide()">&#8594;</button>
-				</div>
-				<p>Your work showcase goes here...</p>
-			</article>
-
-			<article id="contact">
-				<h2 class="major">Contact</h2>
-				<form action="https://formspree.io/f/meoarkkn" method="POST">
-					<div class="fields">
-						<div class="field half">
-							<label for="name">Name</label>
-							<input type="text" name="name" id="name" required />
+				<!-- Header -->
+					<header id="header">
+						<div class="logo">
+							<img src="logo.png" alt="15PLAB Logo" class="logo-image" />
 						</div>
-						<div class="field half">
-							<label for="email">Email</label>
-							<input type="email" name="email" id="email" required />
+						<div class="content">
+							<div class="inner">
+								<h1>15PLAB</h1>
+								<p>We design innovative products with function, beauty, and purpose — from concept to mass production.</p>
+							</div>
 						</div>
-						<div class="field">
-							<label for="message">Message</label>
-							<textarea name="message" id="message" rows="4" required></textarea>
-						</div>
+						<nav>
+							<ul>
+								<li><a href="#about">About</a></li>
+								<li><a href="#work">Work</a></li>
+								<li><a href="#contact">Contact</a></li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- About -->
+							<article id="about">
+								<h2 class="major">About</h2>
+								<span class="image main"><img src="images/KEEP CALMW.png" alt="KEEP CALMW.png" /></span>
+								<p>
+									At <strong>15PLAB</strong>, we ignite ideas like <strong>phosphorus — element 15</strong>.<br><br>
+									Just as phosphorus lights the way in chemistry, we spark innovation in design.<br>
+									We specialize in creating meaningful products that combine <strong>function, beauty, and purpose</strong>,
+									guiding every idea from its <strong>first spark to mass production</strong>.<br><br>
+									Whether it's a bold concept or a subtle refinement, our team is dedicated to turning potential into tangible products.
+									With insight and passion, we bring your ideas to light.
+								</p>
+							</article>
+
+						<!-- Work -->
+							<article id="work">
+								<h2 class="major">Work</h2>
+								<div class="slider">
+									<img src="images/work1.jpg" class="slide active" />
+									<img src="images/work2.jpg" class="slide" />
+									<img src="images/work3.jpg" class="slide" />
+									<div class="slide-nav">
+										<button onclick="changeSlide(-1)">&#10094;</button>
+										<button onclick="changeSlide(1)">&#10095;</button>
+									</div>
+								</div>
+								<p>Your work showcase goes here...</p>
+							</article>
+
+						<!-- Contact -->
+							<article id="contact">
+								<h2 class="major">Contact</h2>
+								<form action="https://formspree.io/f/meoarkkn" method="POST">
+									<div class="fields">
+										<div class="field half">
+											<label for="name">Name</label>
+											<input type="text" name="name" id="name" required />
+										</div>
+										<div class="field half">
+											<label for="email">Email</label>
+											<input type="email" name="email" id="email" required />
+										</div>
+										<div class="field">
+											<label for="message">Message</label>
+											<textarea name="message" id="message" rows="4" required></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><button type="submit" class="primary">Send Message</button></li>
+										<li><input type="reset" value="Reset" /></li>
+									</ul>
+								</form>
+								<p id="form-status" style="display:none; color:#00ff99; font-weight: bold; margin-top: 1rem;">
+									✅ 메시지가 성공적으로 전송되었습니다!
+								</p>
+								<div style="margin-top: 2rem; text-align: center; font-size: 0.9rem; color: #ccc;">
+									<p>📞 010-2439-3388 | eastred15@naver.com</p>
+								</div>
+							</article>
+
 					</div>
-					<ul class="actions">
-						<li><button type="submit" class="primary">Send Message</button></li>
-						<li><input type="reset" value="Reset" /></li>
-					</ul>
-				</form>
-				<p id="form-status" style="display:none; color:#00ff99; font-weight: bold; margin-top: 1rem;">
-					✅ 메시지가 성공적으로 전송되었습니다!
-				</p>
-			</article>
-		</div>
 
-		<footer id="footer">
-			<p class="copyright">&copy; 15PLAB</p>
-		</footer>
-	</div>
+				<!-- Footer -->
+					<footer id="footer">
+						<p class="copyright">&copy; 15PLAB</p>
+					</footer>
 
-	<div id="bg"></div>
+			</div>
 
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
+		<!-- BG -->
+			<div id="bg"></div>
 
-	<script>
-		const form = document.querySelector("form");
-		const status = document.getElementById("form-status");
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
 
-		form.addEventListener("submit", async function (e) {
+		<!-- ✅ Form Success Message Script -->
+		<script>
+		  const form = document.querySelector("form");
+		  const status = document.getElementById("form-status");
+
+		  form.addEventListener("submit", async function (e) {
 			e.preventDefault();
 			const formData = new FormData(form);
 			const response = await fetch(form.action, {
-				method: form.method,
-				body: formData,
-				headers: { 'Accept': 'application/json' }
+			  method: form.method,
+			  body: formData,
+			  headers: {
+				'Accept': 'application/json'
+			  }
 			});
 
 			if (response.ok) {
-				form.reset();
-				status.style.display = "block";
-				setTimeout(() => {
-					status.style.display = "none";
-				}, 5000);
+			  form.reset();
+			  status.style.display = "block";
+			  setTimeout(() => {
+				status.style.display = "none";
+			  }, 5000);
 			} else {
-				alert("❌ 메시지 전송에 실패했습니다. 다시 시도해 주세요.");
+			  alert("❌ 메시지 전송에 실패했습니다. 다시 시도해 주세요.");
 			}
-		});
+		  });
+		</script>
 
-		let currentSlide = 0;
-		const slides = document.querySelectorAll(".slide");
+		<!-- ✅ Manual Slide Script -->
+		<script>
+		  let currentSlide = 0;
+		  const slides = document.querySelectorAll('.slide');
 
-		function showSlide(index) {
+		  function showSlide(index) {
 			slides.forEach((slide, i) => {
-				slide.classList.toggle("active", i === index);
+			  slide.classList.toggle('active', i === index);
 			});
-		}
+		  }
 
-		function nextSlide() {
-			currentSlide = (currentSlide + 1) % slides.length;
+		  function changeSlide(direction) {
+			currentSlide = (currentSlide + direction + slides.length) % slides.length;
 			showSlide(currentSlide);
-		}
+		  }
 
-		function prevSlide() {
-			currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-			showSlide(currentSlide);
-		}
-	</script>
-</body>
+		  showSlide(currentSlide);
+		</script>
+	</body>
 </html>
