@@ -1696,6 +1696,10 @@ input, select, textarea {
   content: none !important;
   height: 0 !important;
 }
-
+.image.main:before {
+  background: none !important;
+  background-color: transparent !important;
+  content: none !important;
+	
 
 
