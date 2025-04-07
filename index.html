@@ -77,7 +77,7 @@
 						<button class="slider-button" onclick="nextSlide()">❯</button>
 					</div>
 				</div>
-				<p style="text-align:center; margin-top:1rem;">Your work showcase goes here...</p>
+				<p id="slide-caption" style="text-align:center; margin-top:1rem;">Stackable silicone containers in pastel colors.</p>
 			</article>
 
 			<article id="contact">
@@ -106,7 +106,7 @@
 					✅ 메시지가 성공적으로 전송되었습니다!
 				</p>
 				<div style="margin-top: 2rem; text-align: center; font-size: 0.9rem; color: #ccc;">
-					<p>📞 010-2439-3388 | 📧 eastred15@naver.com  | 136, Songdogwahak-ro 51beon-gil, Yeonsu-gu, Incheon, Republic of Korea </p>
+					<p>📞 010-1234-5678 | 📧 contact@15plab.com</p>
 				</div>
 			</article>
 		</div>
@@ -149,15 +149,27 @@
 			"images/work2.jpg",
 			"images/work3.jpg"
 		];
+
+		const captions = [
+			"Stackable silicone containers in pastel colors.",
+			"Modular dish design with ergonomic edges.",
+			"Color-matching lid sets for seamless storage."
+		];
+
 		let currentIndex = 0;
+
 		function showSlide(index) {
 			const img = document.getElementById("slide-image");
+			const caption = document.getElementById("slide-caption");
 			img.src = images[index];
+			caption.textContent = captions[index];
 		}
+
 		function prevSlide() {
 			currentIndex = (currentIndex - 1 + images.length) % images.length;
 			showSlide(currentIndex);
 		}
+
 		function nextSlide() {
 			currentIndex = (currentIndex + 1) % images.length;
 			showSlide(currentIndex);
